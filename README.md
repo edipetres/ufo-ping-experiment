@@ -36,6 +36,6 @@ We can interpret these numbers to conclude these servers respond from different 
 
 ## Discussion
 
-The program we ran for the experiment only shows the average pingtime. It could be of interest to take into consideration the min/max pingtimes as well as the standard deviation. These together would give a better picture of the servers proximity to contacting computer. However, the average time also has a high significance.
+The program we ran for the experiment only shows the average pingtime. It could be of interest to take into consideration the min/max pingtimes as well as the standard deviation. These together would give a better picture of the servers' proximity to the computer contacting them. However, the average time also has a high significance.
 
-These results could be influenced by the network environment of the host computer.
+These results could also be influenced by the network environment of the host computer.
