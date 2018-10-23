@@ -1,7 +1,7 @@
 import subprocess
 
-def ping(hostname):
-  resp = subprocess.check_output(['ping', '-c', '5', hostname])
+def ping(hostname, ping_count):
+  resp = subprocess.check_output(['ping', '-c', str(ping_count), hostname])
   respString = resp.decode('utf-8')
   respLines = respString.split('\n')
   line_with_stats = respLines[-2]
@@ -14,5 +14,5 @@ ping_count = 5
 print(f'Average round-trip for {ping_count} pings')
 
 for hostname in hostnames:
-  avg_result = ping(hostname)
+  avg_result = ping(hostname, ping_count)
   print(f'{hostname}: {avg_result} ms')
